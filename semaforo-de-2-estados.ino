@@ -15,7 +15,7 @@ void setup()
   pinMode(led4, OUTPUT);
   pinMode(led5, OUTPUT);
   
-  pinMode(botao, INPUT_PULLUP);
+  pinMode(botao, INPUT);
 }
 
 void loop()
@@ -46,6 +46,8 @@ void loop()
     digitalWrite(led2, LOW);
     delay(1000);
     digitalWrite(led1, HIGH);
+    digitalWrite(led4, LOW);
+    digitalWrite(led5, HIGH);
     delay(1000);
     digitalWrite(led1, LOW);
     delay(1000);
