@@ -1,4 +1,4 @@
-<h1>🔌 Sistemas Embarcados - 1° Módulo - ETEC</h1>
+<h1>🔌 Sistemas Embarcados - 2° Módulo - ETEC</h1>
 
 <p>
   <img src="https://img.shields.io/badge/platform-Arduino-00979D?logo=arduino&logoColor=white" alt="Arduino" />
