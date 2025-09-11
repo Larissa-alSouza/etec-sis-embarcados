@@ -1,56 +1,82 @@
-int led1 = 12; //led vermelho carros
-int led2 = 11; //led amarelo carros
-int led3 = 10; //led verde carros
-int led4 = 9; //led vermelho pedestres
-int led5 = 8; //led verde pedestres
+int led1 = 12; // LED vermelho carros
+int led2 = 11; // LED amarelo carros
+int led3 = 10; // LED verde carros
+int led4 = 9; // LED vermelho pedestres
+int led5 = 8; // LED verde pedestres
 
 int botao = 2;
-int val = 0;
-  
-void setup()
-{
+
+void setup() {
   pinMode(led1, OUTPUT);
   pinMode(led2, OUTPUT);
   pinMode(led3, OUTPUT);
   pinMode(led4, OUTPUT);
   pinMode(led5, OUTPUT);
-  
   pinMode(botao, INPUT);
+  
 }
 
-void loop()
-{
-  val = digitalRead(botao);
+void loop() {
+  digitalWrite(led3, HIGH);
+  digitalWrite(led1, LOW);
+  digitalWrite(led5, LOW);
+  digitalWrite(led4, HIGH);
   
-  if(val == HIGH)
-  {
-    digitalWrite(led5, HIGH);
-    digitalWrite(led1, HIGH);
-    
-    digitalWrite(led2, LOW);
+  if (digitalRead(botao) == HIGH) {
     digitalWrite(led3, LOW);
-    digitalWrite(led4, LOW);
+  	digitalWrite(led2, LOW);
+  	digitalWrite(led1, HIGH);
+
+  	digitalWrite(led4, LOW);
+  	digitalWrite(led5, HIGH);
+    delay(2000);
+
+  	digitalWrite(led5, LOW);
+  	digitalWrite(led4, HIGH);
+
+  	digitalWrite(led1, LOW);
+  	digitalWrite(led3, HIGH);
+    return;
   }
-  else
-  {
-    digitalWrite(led5, LOW);
-    digitalWrite(led4, HIGH);
-    digitalWrite(led1, LOW);
-    
-    digitalWrite(led3, HIGH);
-    delay(1000);
-    digitalWrite(led3, LOW);
-    delay(1000);
-    digitalWrite(led2, HIGH);
-    delay(1000);
-    digitalWrite(led2, LOW);
-    delay(1000);
-    digitalWrite(led1, HIGH);
-    digitalWrite(led4, LOW);
-    digitalWrite(led5, HIGH);
-    delay(1000);
-    digitalWrite(led1, LOW);
-    delay(1000);
-  }
+
+  delay(2000);
   
+  digitalWrite(led3, LOW);
+  digitalWrite(led2, HIGH);
+  
+  if (digitalRead(botao) == HIGH) {
+    digitalWrite(led3, LOW);
+  	digitalWrite(led2, LOW);
+  	digitalWrite(led1, HIGH);
+
+  	digitalWrite(led4, LOW);
+  	digitalWrite(led5, HIGH);
+
+  	delay(2000);
+
+  	digitalWrite(led5, LOW);
+  	digitalWrite(led4, HIGH);
+
+  	digitalWrite(led1, LOW);
+  	digitalWrite(led3, HIGH);
+    return;
+  }
+
+  delay(1000);
+
+  digitalWrite(led2, LOW);
+  digitalWrite(led1, HIGH);
+  
+  digitalWrite(led4, LOW);
+  digitalWrite(led5, HIGH);
+  
+  delay(2000);
+    
+  digitalWrite(led4, LOW);
+  
+  digitalWrite(led5, LOW);
+  digitalWrite(led4, HIGH);
+
+  digitalWrite(led1, LOW);
+  digitalWrite(led3, HIGH);
 }
