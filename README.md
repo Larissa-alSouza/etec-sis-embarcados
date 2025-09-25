@@ -54,7 +54,6 @@
     Clique em <strong>Code &gt; Download ZIP</strong> no GitHub.
   </li>
   <li>Abra os arquivos .ino na <strong>Arduino IDE</strong>.</li>
-  <li>Para simular online, acesse o <a href="https://www.tinkercad.com/">Tinkercad</a> e abra os projetos na aba <strong>Circuits</strong>.</li>
   <li>Para testes reais, conecte os componentes ao Arduino e envie o código via IDE.</li>
 </ol>
 
