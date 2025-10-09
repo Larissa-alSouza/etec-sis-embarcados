@@ -23,7 +23,6 @@ void loop()
   digitalWrite(azul, LOW);//Coloca azul em nível baixo novamente
   digitalWrite(vermelho, LOW);//Coloca vermelho em nível baixo
   digitalWrite(verde, LOW);//Coloca verde em nível baixo
-  delay(1000);//Intervalo de 1 segundo
   
   //Magenta (violeta-púrpura)
   digitalWrite(azul, HIGH); //Coloca azul em nível alto
@@ -31,7 +30,6 @@ void loop()
   delay(1000); //Intervalo de 1 segundo
   digitalWrite(azul, LOW); //Coloca azul em nível baixo
   digitalWrite(vermelho, LOW); //Coloca vermelho em nível baixo
-  delay(1000); //Intervalo de 1 segundo
   
   //Amarelo
   digitalWrite(verde, HIGH); //Coloca verde em nível alto
@@ -39,7 +37,6 @@ void loop()
   delay(1000); //Intervalo de 1 segundo
   digitalWrite(verde, LOW); //Coloca verde em nível baixo
   digitalWrite(vermelho, LOW); //Coloca vermelho em nível baixo
-  delay(1000); //Intervalo de 1 segundo
   
   //Ciano
   digitalWrite(verde, HIGH); //Coloca verde em nível alto
@@ -47,5 +44,26 @@ void loop()
   delay(1000); //Intervalo de 1 segundo
   digitalWrite(verde, LOW); //Coloca verde em nível baixo
   digitalWrite(azul, LOW); //Coloca azul em nível baixo
+
+  //Vermelho
+  digitalWrite(vermelho, HIGH); //Coloca vermelho em nível alto
   delay(1000); //Intervalo de 1 segundo
+  digitalWrite(vermelho, LOW); //Coloca vermelho em nível baixo
+  
+  //Azul
+  digitalWrite(azul, HIGH); //Coloca azul em nível alto
+  delay(1000); //Intervalo de 1 segundo
+  digitalWrite(azul, LOW); //Coloca azul em nível baixo
+  
+  //Verde
+  digitalWrite(verde, HIGH); //Coloca verde em nível alto
+  delay(1000); //Intervalo de 1 segundo
+  digitalWrite(verde, LOW); //Coloca verde em nível baixo
+  
+  //Preto
+  delay(1000);//Intervalo de 1 segundo
+  digitalWrite(azul, LOW);//Coloca azul em nível baixo 
+  digitalWrite(vermelho, LOW);//Coloca vermelho em nível baixo
+  digitalWrite(verde, LOW);//Coloca verde em nível baixo
+  
 }
