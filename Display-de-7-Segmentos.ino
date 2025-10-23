@@ -90,7 +90,7 @@ void loop()
   delay(2000);
   
   //6
-  digitalWrite(a, 0);
+  digitalWrite(a, 1);
   digitalWrite(b, 0);
   digitalWrite(c, 1);
   digitalWrite(d, 1);
@@ -123,7 +123,7 @@ void loop()
   digitalWrite(a, 1);
   digitalWrite(b, 1);
   digitalWrite(c, 1);
-  digitalWrite(d, 0);
+  digitalWrite(d, 1);
   digitalWrite(e, 0);
   digitalWrite(f, 1);
   digitalWrite(g, 1);
